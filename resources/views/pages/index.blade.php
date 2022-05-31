@@ -23,7 +23,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 p-7 justify-items-center">
         @foreach($posts as $post)
         <div class="max-w-xl rounded overflow-hidden shadow-lg my-20">
-        <img class="w-full" src="../../../storage/post_images/{{$post->post_image}}" alt="Sunset in the mountains">
+        <img class="w-full" src="{{ url('storage/post_images') }}/{{$post->post_image}}" alt="photo">
         <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">{{ $post->title }}</div>
             <p class="text-grey-darker text-base">{!! $post->details !!} </p>

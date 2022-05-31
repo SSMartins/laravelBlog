@@ -16,19 +16,19 @@
 	<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
     <ul class="list-reset lg:flex justify-end flex-1 items-center">
 				<li class="mr-6">
-					<a class="inline-block py-2 px-2 text-white no-underline hover:text-blue-300" href="/">Home</a>
+					<a class="inline-block py-2 px-2 text-white no-underline hover:text-blue-300" href="/">Accueil</a>
 				</li>
 				<li class="mr-6">
-					<a class="inline-block text-white no-underline hover:text-blue-300 hover:text-underline py-2 px-2" href="/accueil">Accueil</a>
+					<a class="inline-block text-white no-underline hover:text-blue-300 hover:text-underline py-2 px-2" href="/accueil">A propos</a>
 				</li>
 				<li class="mr-6">
 					<a class="inline-block text-white no-underline hover:text-blue-300 hover:text-underline py-2 px-2" href="/contact">Contact</a>
 				</li>
                 <li class="mr-6">
-					<a class="inline-block text-white no-underline hover:text-blue-300 hover:text-underline py-2 px-2" href="{{ route('login') }}">Login</a>
+					<a class="inline-block text-white no-underline hover:text-blue-300 hover:text-underline py-2 px-2" href="{{ route('login') }}">Connexion</a>
 				</li>
                <li class="mr-6">
-					<a class="inline-block text-white no-underline hover:text-blue-300 hover:text-underline py-2 px-2" href="{{ route('register') }}">Register</a>
+					<a class="inline-block text-white no-underline hover:text-blue-300 hover:text-underline py-2 px-2" href="{{ route('register') }}">S'inscrire</a>
 				</li>
 			</ul>
 		</div>
