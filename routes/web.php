@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,9 +22,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', 'App\Http\Con
 })->name('dashboard');
 
 Route::get('/','App\Http\Controllers\PagesController@index');
-Route::view('/accueil','pages.accueil');
+Route::view('/about','pages.about');
 Route::view('/contact','pages.contact');
 Route::resource('posts', 'App\Http\Controllers\PostsController');
+
 
 
 // Route::get('/', function () {
