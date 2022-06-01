@@ -11,13 +11,10 @@ class PagesController extends Controller
 
     public $post;
 
-    // public function mount($id){
-    //     $this->post = Post::where('id', $id)->first();
-    // }
-
     public function index()
     {
         $posts = Post::orderBy('id', 'DESC')->where('post_type', 'post')->where('is_published', '1')->paginate(50);
-        return view('Pages.index', compact('posts'));
+        return view('pages.index', compact('posts'));
     }
+
 }
