@@ -12,6 +12,7 @@ class PagesController extends Controller
     public function index()
     {
         $posts = Post::orderBy('id', 'DESC')->where('post_type', 'post')->where('is_published', '1')->paginate(50);
-        return view('Pages.index', compact('posts'));
+        return view('pages.index', compact('posts'));
     }
+
 }
